@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <Button
+        android:text="@string/btnIntend"
+        android:id="@+id/btnIntend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="@drawable/round_shape_btn1"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/btnIntend">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnIntend"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY" />
+    </ScrollView>
+
+    <Button
+        android:layout_below="@+id/image_view"
+        android:layout_gravity="center_horizontal"
+        android:text="PROCESS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_process"
+        android:textColor="#ffffff"
+        android:background="@drawable/round_shape_btn2" />
+
+
+    <TextView
+        android:id="@+id/textview_result"
+        android:text="NO TEXT"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:layout_below="@+id/button_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

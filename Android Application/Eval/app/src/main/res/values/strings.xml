@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Eval</string>
+    <string name="btnIntend">Take Picture</string>
+    <string name="album_name">Eval</string>
+</resources>
